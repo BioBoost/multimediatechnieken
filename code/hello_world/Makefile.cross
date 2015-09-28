@@ -3,12 +3,12 @@ BINPATH=/home/bioboost/rpi_tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-rasp
 CC=$(BINPATH)gcc
 
 # Compiler flags
-CFLAGS  = -Wall
+CFLAGS=-Wall
   #  -Wall turns on most, but not all, compiler warnings
 
 
 hello: clean
-    $(CC) $(CFLAGS) -o hello main.cpp
+	$(CC) $(CFLAGS) -o hello main.cpp
 
 clean:
-    rm -f hello
+	rm -f hello
