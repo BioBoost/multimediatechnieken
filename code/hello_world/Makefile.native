@@ -1,0 +1,13 @@
+# The compiler
+CC=gcc
+
+# Compiler flags
+CFLAGS  = -Wall
+  #  -Wall turns on most, but not all, compiler warnings
+
+
+hello: clean
+	$(CC) $(CFLAGS) -o hello main.cpp
+
+clean:
+	rm -f hello
